@@ -1,0 +1,1440 @@
+/* General Reset */
+* {
+    margin: 15;
+    padding: 15;
+    box-sizing: border-box;
+    /* background-color: ; */
+}
+
+.logo img{
+    max-width: 50px;
+    margin-left: 30px;
+}
+
+.logo2 img{
+    max-width: 60px;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 0;
+}
+
+/* Sticky Header */
+.sticky-header {
+    background-color: #1e1d1d;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation Menu */
+#cssmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#cssmenu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu ul li {
+    margin: 0 15px;
+}
+
+#cssmenu ul li a {
+    font-size: 14px;
+    color: #e49022;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#cssmenu ul li.active a,
+#cssmenu ul li a:hover {
+    color: #fff;
+    background-color: #228ada;
+    border-radius: 5px;
+}
+
+/* Extra CSS for nav bar for all */
+
+/* Dropdown Menu Specific Styles */
+#cssmenu .dropdown {
+    position: relative;
+}
+
+#cssmenu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+#cssmenu .dropdown-content li {
+    margin: 0;
+}
+
+#cssmenu .dropdown-content a {
+    padding: 8px 15px;
+    color: #e49022;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#cssmenu .dropdown-content a:hover {
+    color: #fff;
+    background-color: #228ada;
+    border-radius: 5px;
+}
+
+#cssmenu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ensure spacing and alignment matches the existing style */
+#cssmenu ul li {
+    margin: 0 15px;
+}
+
+#cssmenu ul li a {
+    font-size: 14px;
+    color: #e49022;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#cssmenu ul li.active a,
+#cssmenu ul li a:hover {
+    color: #fff;
+    background-color: #228ada;
+    border-radius: 5px;
+}
+
+
+
+/* Extra CSS for nav bar for all END*/
+
+/* Banner Section */
+.banner {
+    position: relative;
+    margin-top: 60px; /* Space to ensure image appears below the navbar */
+}
+
+.banner img.img-responsive {
+    width: 50%;
+
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: -1;
+    margin-top: 87px;
+}
+
+.banner .banner-pragh {
+    margin-top: 20px;
+    font-size: 24px;
+    width: 750px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    padding: 10px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 15px;
+}
+
+.banner-pragh p {
+    color: #b21a1a;
+    letter-spacing: 1px;
+}
+
+.banner .banner-info {
+    width: 590px;
+    margin-top: 20px;
+    margin-left: 23%;
+    position: relative;
+}
+
+.banner .banner-date {
+    width: 250px;
+    float: left;
+    background: #eee9e9;
+    transform: skewX(-33deg);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+}
+
+.banner-date h2 {
+    background: #eee9e9;
+    text-align: center;
+    padding: 8px 0px;
+    transform: skewX(32deg);
+    margin-left: -26px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 259px;
+    color: #b21a1a;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.banner .banner-place {
+    width: 340px;
+    float: right;
+    background: rgba(175, 26, 26, 0.9);
+    transform: skewX(-33deg);
+    margin-top: -6px;
+    border-top: 5px solid #b21a1ad9;
+}
+
+.banner-place h1 {
+    color: #fff;
+    text-align: center;
+    padding: 7px 0;
+    transform: skewX(32deg);
+    margin-left: 9px;
+    margin-top: -5px;
+    margin-bottom: 0;
+    border-top: 5px solid #b21a1ac4;
+    border-bottom: 5px solid #b21a1ac7;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Menu */
+@media screen and (max-width: 1000px) {
+    .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #cssmenu ul {
+        flex-direction: column;
+        display: none;
+        background: #fff;
+        width: 100%;
+    }
+
+    #cssmenu ul li {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #cssmenu ul li a {
+        padding: 10px;
+    }
+
+    .button {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .button:before,
+    .button:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #b21a1a;
+        transition: all 0.3s ease;
+    }
+
+    .button:before {
+        top: 8px;
+    }
+
+    .button:after {
+        bottom: 8px;
+    }
+
+    .button.menu-opened:before {
+        transform: rotate(45deg);
+        top: 50%;
+        transform-origin: center;
+    }
+
+    .button.menu-opened:after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+        transform-origin: center;
+    }
+
+    #cssmenu ul.menu-opened {
+        display: flex;
+    }
+}
+
+
+/* Start about information section */
+
+
+
+/* Container for sidebar and main content */
+.main-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* Sidebar styles */
+.side-bar {
+    background: #e8e7e7;
+    padding: 20px;
+    border-bottom: 23px solid #cdc1b2;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6), 0 0 200px 1px rgba(255, 255, 255, 0.5);
+    width: 30%; /* Sidebar takes up 30% of the width */
+    min-width: 250px; /* Ensures sidebar has a minimum width */
+    box-sizing: border-box;
+}
+
+.side-bar h2 {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.side-bar ul {
+    background: #fff;
+    margin: auto;
+    padding: 15px;
+    list-style: none;
+}
+
+.side-bar ul li {
+    padding: 11px 0px;
+}
+
+.side-bar ul li a {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #222222;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.side-bar ul li a:hover {
+    color: #5d0569;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.side-bar ul li img {
+    padding-right: 5px;
+}
+
+/* Main content styles */
+.about {
+    width: 68%; /* Main content takes up the remaining width */
+    padding: 20px;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.3);
+    background: #228ada55;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 2%; /* Adjust for better spacing */
+}
+
+.conf-pragh h2 {
+    color: #E49022;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+.conf-pragh h3 {
+    color: #E49022;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+.conf-pragh h1{
+    text-align: center;
+    color: #228ADA;
+}
+
+.conf-pragh p {
+    line-height: 32px;
+    text-align: justify;
+    color: #000;
+}
+
+.submission-paper,
+.download-paper,
+.download-samplepaper {
+    background: #e2dcdc;
+    width: 257px;
+    height: 70px;
+    float: left;
+    margin: 10px 20px 10px 0px;
+    padding: 5px 5px;
+    border-bottom: 4px solid #b21a1a;
+    box-shadow: 2px 2px 7px 3px #aab9c3;
+}
+
+.submission-paper img,
+.download-paper img,
+.download-samplepaper img {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.content-bttn {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.content-bttn h2 {
+    color: #000;
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.content-bttn p {
+    color: #000;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 5px;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stacks sidebar and content vertically on smaller screens */
+    }
+
+    .side-bar, .about {
+        width: 100%; /* Each takes full width when stacked */
+        margin-bottom: 20px;
+    }
+}
+
+.dnd {
+    /* If this is not needed, it may interfere with your layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Start about information section end */
+
+
+/* Flash card code about us */
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px; /* Space between cards */
+    margin: 30px 20px; /* Adds gap from left and right sides */
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger box shadow */
+    border-radius: 10px;
+    flex: 1; /* Makes all cards of equal width */
+    min-width: 300px; /* Ensures a minimum width for each card */
+    box-sizing: border-box;
+    margin: 0 10px; /* Adds a small gap on the sides of each card */
+    display: flex;
+    flex-direction: column; /* Allows the button to be aligned at the bottom */
+    justify-content: space-between; /* Ensures the button stays at the bottom */
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Center-aligns the heading */
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify; /* Justifies the paragraph text */
+}
+
+.card-btn {
+    display: inline-block;
+    margin-top: 20px; /* Adds space between the paragraph and the button */
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #e65a4f;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stacks cards vertically on smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Cards take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* Flash card code about us end */
+
+
+/* Footer section code */
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(218, 154, 17, 0.595);
+    padding: 20px 30px;
+}
+
+/* Flex container for the bottom footer */
+.footer-bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Copyright Section */
+.footer-bottom-section.text-left {
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+.footer-bottom-section.text-left p {
+    margin: 0;
+}
+
+.footer-bottom-section.text-left a {
+    color: #E49022;
+    text-decoration: none;
+}
+
+.footer-bottom-section.text-left a:hover {
+    color: #228Ada;
+}
+
+/* Links Section */
+.footer-bottom-section.text-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-bottom-section .nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-bottom-section .nav-item {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.footer-bottom-section .nav-link {
+    color: #000000;
+    font-size: 14px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer-bottom-section .nav-link:hover {
+    color: #228Ada;
+    text-decoration: underline;
+}
+
+.visitor-counter a {
+content: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-bottom-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom-section.text-left, 
+    .footer-bottom-section.text-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom-section .nav-item {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+/* Footer section code End */
+
+
+/* Div section movement no IEEE pending one */
+
+/* IEEE Record Section */
+.ieee-record-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    background-color: #f8f8f8; /* Light background color */
+    padding: 20px;
+}
+
+.ieee-record-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: #228Ada;
+}
+
+
+/* Div section movement end */
+
+
+/* Hero Image section CSS start */
+
+/* Conference Section */
+.conference-section {
+    position: relative;
+
+    padding: 50px 0;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Background Image */
+.conference-bg {
+    background: url(/auscampus.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    padding: 80px 20px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Conference Text */
+.conference-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.conference-text h2 {
+    font-size: 2em;
+    margin-bottom: 50px; /* Space between (ISACC-2025) and date/location */
+}
+
+/* Conference Details */
+.conference-details {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conference-date, .conference-location {
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.2); /* Light semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Left Align Date */
+.conference-date {
+    text-align: left;
+}
+
+/* Right Align Location */
+.conference-location {
+    text-align: right;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .conference-text h1 {
+        font-size: 1.8em;
+    }
+    .conference-text h2 {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+    .conference-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conference-date, .conference-location {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+
+/* Hero Image section CSS END */
+
+
+/* section card images home */
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Flex container for flashcards */
+.about-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Reduced gap to 5px between columns */
+    flex-wrap: nowrap; /* Prevents wrapping, keeps boxes horizontal */
+}
+
+/* Flashcard blocks */
+.about-block {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 32%; /* Each block takes approximately 32% of the container width */
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow around the card */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.sehead h1{
+    text-align: center;
+}
+
+/* Background images */
+.about-au {
+    background-image: url('/images/about-au.jpg');
+}
+
+.about-isacc {
+    background-image: url('/images/about-isacc.jpg');
+}
+
+.about-cse {
+    background-image: url('/images/about-cse.jpg');
+}
+
+/* Overlay for darkening the background image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Text content */
+.about-block h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.about-block p {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cta-btn {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e65a4f;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-horizontal {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-block {
+        width: 100%;
+    }
+}
+
+
+
+/* section card images end */
+
+
+
+/* About US page start */
+
+
+
+
+
+
+/* General Container Styling */
+.about-section {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Flexbox Layout for About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Image Styling */
+.image-container {
+    flex: 1;
+    max-width: 45%; /* Adjust to control the image width */
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.text-container {
+    flex: 1;
+    padding-left: 30px; /* Adds space between the image and the text */
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e65a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .image-container, .text-container {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .text-container h1 {
+        text-align: center;
+    }
+
+    .text-container p, .btn-primary {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About US page END */
+
+
+/* Contact Us page Start */
+
+
+/* General Container Styling */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff6600;
+}
+
+/* Flexbox Layout for Contact Content */
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Map Container Styling */
+.map-container {
+    flex: 1;
+    max-width: 50%; /* Adjust to control the map width */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 1;
+    max-width: 45%;
+    
+    padding: 80px;
+    background-color: #2c2f33;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.contact-info a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* extra css  */
+
+/* extra css end */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .map-container, .contact-info {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* Contact Us page End */
+
+/* speaker page*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Speaker Grid */
+.speakers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Speaker Card */
+.speaker-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.speaker-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.speaker-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.speaker-card hr {
+    border: none;
+    border-top: 3px solid #e49022;
+    margin: 20px 0;
+}
+
+.about-speaker {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 1.2em;
+    color: #228ADA;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .speaker-card {
+        width: 100%;
+    }
+}
+
+
+
+/* speaker page end */
+
+
+
+
+body {
+    padding: 2%;
+    padding-bottom: 0%;
+}
+
+
+/* RESPONSIVE EDITOR FOR NOW */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sticky Header */
+.sticky-header {
+    background-color: #1e1d1d;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+}
+
+/* Navigation Menu */
+#cssmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#cssmenu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu ul li {
+    margin: 0 15px;
+}
+
+#cssmenu ul li a {
+    font-size: 14px;
+    color: #e49022;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#cssmenu ul li.active a,
+#cssmenu ul li a:hover {
+    color: #fff;
+    background-color: #228ada;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Specific Styles */
+#cssmenu .dropdown {
+    position: relative;
+}
+
+#cssmenu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+#cssmenu .dropdown-content li {
+    margin: 0;
+}
+
+#cssmenu .dropdown-content a {
+    padding: 8px 15px;
+    color: #e49022;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#cssmenu .dropdown-content a:hover {
+    color: #fff;
+    background-color: #228ada;
+    border-radius: 5px;
+}
+
+#cssmenu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Breadcrumb and Banner Adjustments */
+.banner {
+    position: relative;
+    margin-top: 80px; /* Adjusted for the sticky header */
+}
+
+.banner img.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+}
+
+.banner .banner-pragh {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.banner-pragh p {
+    color: #b21a1a;
+    letter-spacing: 1px;
+}
+
+.banner .banner-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.banner-date,
+.banner-place {
+    display: inline-block;
+    background: rgba(175, 26, 26, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 5px 0;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.38);
+}
+
+@media screen and (max-width: 768px) {
+    #cssmenu ul {
+        flex-direction: column;
+        display: none;
+        background: #fff;
+        width: 100%;
+    }
+    .logo2{
+        display: none;
+    }
+    .logo img{
+        margin-left: 0;
+    }
+    .logo {
+        width: 0;
+    }
+
+    #cssmenu ul li {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #cssmenu ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .button {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .button:before,
+    .button:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #b21a1a;
+        transition: all 0.3s ease;
+    }
+
+    .button:before {
+        top: 8px;
+    }
+
+    .button:after {
+        bottom: 8px;
+    }
+
+    .button.menu-opened:before {
+        transform: rotate(45deg);
+        top: 50%;
+        transform-origin: center;
+    }
+
+    .button.menu-opened:after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+        transform-origin: center;
+    }
+
+    #cssmenu ul.menu-opened {
+        display: flex;
+    }
+
+    .banner .banner-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner-date,
+    .banner-place {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* RESPONSIVE EDITOR FOR NOW END*/
